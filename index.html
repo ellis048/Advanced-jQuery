@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
+    <title>Portfolio</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-    <h1>Welcome to My Simple Page</h1>
-    <p>This is a basic HTML page with minimal styling.</p>
+    <div class="filter-container">
+    <h1 class="name">Ellis Yang's Portfolio</h1>
+    <div class="filter-buttons">  
+        
+        <button data-filter="all">All</button>
+        <button data-filter="web-design">Web Design</button>
+        <button data-filter="graphic-design">Graphic Design</button>
+        <button data-filter="illustration">Illustration</button>
+    </div>
+</div>
+    <div class="portfolio">
+        <div class="portfolio-item" data-category="web-design" data-image="images/image1.png" data-description= "Web Design Project → https://crazymegav.one/" > 
+            <img src="images/image1.png" alt="Web Design 1">
+        </div>
+        <div class="portfolio-item" data-category="graphic-design" data-image="images/image2.png" data-description="Graphic Design Project 1">
+            <img src="images/image2.png" alt="Graphic Design 1">
+        </div>
+        <div class="portfolio-item" data-category="illustration" data-image="images/image3.png" data-description="The Fallen Illustration">
+            <img src="images/image3.png" alt="Illustration 1">
+        </div>
+    </div>
+    
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <span class="close">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+            <p id="lightbox-desc"></p>
+        </div>
+    </div>
+ 
 </body>
 </html>

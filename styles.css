@@ -1,0 +1,98 @@
+
+body {
+        font-family: Arial, sans-serif;
+        color: #e0e1dd;
+        background-color: #778da9;
+    } 
+
+
+    .name {
+    font-family: 'Times New Roman', Times, serif;
+    color:#e0e1dd;
+    
+
+}
+/* background for buttons */
+.filter-buttons {
+    display: flex;
+    justify-content: flex-end;
+    
+     background-color:#1b263b;
+     padding:32px;
+     font-size: 16px; 
+    
+    }
+
+.filter-buttons button {
+    cursor: pointer; 
+    margin-right: 250px;
+    }
+
+button{
+    padding: 16px 32px;
+    background-color: #e0e1dd;
+    
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between; /* Aligns name left, buttons right */
+    align-items: center;
+    background-color: #1b263b;
+    margin-bottom: 120px; 
+}
+
+     /* portfolio style */
+.portfolio { 
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 250px;
+    background-color: #e0e1dd;
+    margin-right: 10px;
+    }
+
+.portfolio-item { 
+    width: 400px;
+     cursor: pointer; 
+    }
+         /*  */
+.portfolio-item img { 
+    width: 140%; 
+    display: block; 
+}
+
+     /* this is the light box */
+.lightbox { 
+    display: none; 
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background:#1b263b; 
+    justify-content: center;
+    align-items: center;
+     }
+    
+     /* this is behind the lightbox */
+.lightbox-content { 
+    position: relative;
+     background: #0d1b2a; 
+     padding: 10px; 
+    }
+
+#lightbox-img {
+    width: 900px;
+    height: 100%;
+    }
+
+
+    /* close button top left of the lightbox */
+.close { 
+    position: absolute;
+    top: 10px; 
+    left: 30px;
+    cursor: pointer;
+    color:#ff0000;
+    font-size: 40px;
+    }
